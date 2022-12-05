@@ -11,10 +11,9 @@ class Index extends \Magento\Framework\App\Action\Action
 		return parent::__construct($context);
 	}
 	public function execute()
-	{
-		echo "Module Works!!!!";
-		exit;
-	}
+    {
+        return $this->_pageFactory->create();
+    }
 }
 
 		
