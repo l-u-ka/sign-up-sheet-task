@@ -1,5 +1,10 @@
 <?php
 namespace Luka\Signup\Model;
+
+
+use Signup\Form\Api\Data\UserInterface;
+
+
 class User extends \Magento\Framework\Model\AbstractModel implements \Magento\Framework\DataObject\IdentityInterface
 {
 	const CACHE_TAG = 'luka_signup_data';
@@ -18,4 +23,5 @@ class User extends \Magento\Framework\Model\AbstractModel implements \Magento\Fr
 		$values = [];
 		return $values;
 	}
+	
 }
