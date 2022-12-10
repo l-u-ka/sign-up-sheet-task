@@ -5,15 +5,13 @@ namespace Luka\Signup\Model\Data;
 use Luka\Signup\Api\Data\UserInterface;
 use Magento\Framework\DataObject;
 
-class User extends DataObject implements UserInterface
-{
+class User extends DataObject implements UserInterface {
     /**
      * Getter for Name.
      *
      * @return string|null
      */
-    public function getName(): ?string
-    {
+    public function getName(): ?string {
         return $this->getData(self::NAME);
     }
 
@@ -24,8 +22,7 @@ class User extends DataObject implements UserInterface
      *
      * @return void
      */
-    public function setName(?string $name): void
-    {
+    public function setName(?string $name): void {
         $this->setData(self::NAME, $name);
     }
 
@@ -34,8 +31,7 @@ class User extends DataObject implements UserInterface
      *
      * @return string|null
      */
-    public function getDate(): ?string
-    {
+    public function getDate(): ?string {
         return $this->getData(self::DATE);
     }
 
@@ -46,8 +42,7 @@ class User extends DataObject implements UserInterface
      *
      * @return void
      */
-    public function setDate(?string $date): void
-    {
+    public function setDate(?string $date): void {
         $this->setData(self::DATE, $date);
     }
 }

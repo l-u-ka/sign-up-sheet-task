@@ -2,8 +2,7 @@
 
 namespace Luka\Signup\Api\Data;
 
-interface SignupInterface
-{
+interface SignupInterface {
     /**
      * String constants for property names
      */

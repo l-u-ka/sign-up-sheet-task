@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="Luka_Signup::users" title="Signed up Users" module="Luka_Signup" sortOrder="1" action="luka_signup/grid" resource="Luka_Signup::users" parent="Magento_Customer::customer"/>
+        <add id="Luka_Signup::users" title="Signed up Users" module="Luka_Signup" 
+        sortOrder="1" action="luka_signup/grid" resource="Luka_Signup::users" parent="Magento_Customer::customer"/>
     </menu>
 </config>

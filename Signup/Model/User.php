@@ -1,25 +1,19 @@
 <?php
 namespace Luka\Signup\Model;
 
-
 use Signup\Form\Api\Data\UserInterface;
 
-
-class User extends \Magento\Framework\Model\AbstractModel implements \Magento\Framework\DataObject\IdentityInterface
-{
+class User extends \Magento\Framework\Model\AbstractModel implements \Magento\Framework\DataObject\IdentityInterface {
 	const CACHE_TAG = 'luka_signup_data';
 	protected $_cacheTag = 'luka_signup_data';
 	protected $_eventPrefix = 'luka_signup_data';
-	protected function _construct()
-	{
+	protected function _construct() {
 		$this->_init('Luka\Signup\Model\ResourceModel\User');
 	}
-	public function getIdentities()
-	{
+	public function getIdentities() {
 		return [self::CACHE_TAG . '_' . $this->getId()];
 	}
-	public function getDefaultValues()
-	{
+	public function getDefaultValues() {
 		$values = [];
 		return $values;
 	}

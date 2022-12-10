@@ -10,7 +10,9 @@
     <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
         <arguments>
             <argument name="collections" xsi:type="array">
-                <item name="luka_signup_grid_listing_data_source" xsi:type="string">Luka\Signup\Model\ResourceModel\User\Grid\Collection</item>
+                <item name="luka_signup_grid_listing_data_source" xsi:type="string">
+                Luka\Signup\Model\ResourceModel\User\Grid\Collection
+                </item>
             </argument>
         </arguments>
     </type>
